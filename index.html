@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>campaign viewer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/campaign.js"></script>
+
+</head>
+<body>
+    <div class="main">
+
+        <div class="sidebar">
+            <select class="agency list">
+                <option disabled selected>Choose an Agency...</option>
+            </select>
+
+            <select class="advertiser list">
+                <option disabled selected>Choose an Advertiser...</option>
+            </select>
+
+            <a href="#" class="get-campaigns btn">Get Campaigns</a>
+        </div>
+
+        <div class="campaign-view">
+            <table id="myTable">
+                <thead>
+                    <th>Campaign Name</th>
+                    <th>Status</th>
+                    <th>Budget</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </thead>
+                <tbody id="rows">
+                </tbody>
+            </table>
+
+            <a href="#" class="save btn">Save</a>
+        </div>
+
+    </div>
+</body>
+</html>
